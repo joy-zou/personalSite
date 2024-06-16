@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>surprise!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+    <div class = "main-container">
+      <button id = "confetti-btn" class = "confetti-btn" onclick = "showText()"> click me! </button>
+    </div>
+
+    <div id = 'container' class = 'container' >
+      <div id = 'content' class = 'content' >
+        <div id = "text" class = "text">
+          <h1> 🎉🎉 HAPPY FATHER'S DAY!!!!!!!!!!! 🎉🎉 </h1>
+          <p> sorry for annoying you sometimes :(</p>
+          <p> i don't mean it 💔 </p>
+        </div>
+        
+        <!--><div class = 'gif-box' id = 'gif-box'><!-->
+        <img id = "gif" class = "gif" src = 'https://i.giphy.com/3oKIP8yXbGF6upLI40.webp'></img>
+      <!--></div><!-->
+    </div>
+    
+    </div>
+
+    
+    <!--> <script src="script.js"></script> <!-->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  
+    <script>
+      const confettiBtn = document.querySelector(".confetti-btn");
+  
+        confettiBtn.addEventListener("click", () => {
+        const defaults = {
+          spread: 360,
+          ticks: 100,
+          gravity: 0,
+          decay: 0.94,
+          startVelocity: 30,
+          shapes: ["heart"],
+          colors: ["FFC0CB", "FF69B4", "FF1493", "C71585"],
+        };
+  
+        confetti({
+          ...defaults,
+          particleCount: 50,
+          scalar: 2,
+        });
+  
+        confetti({
+          ...defaults,
+          particleCount: 25,
+          scalar: 3,
+        });
+  
+        confetti({
+          ...defaults,
+          particleCount: 10,
+          scalar: 4,
+        });
+      });
+  
+      
+      var text = document.getElementById('text');
+      text.style.display = 'none';
+
+      var gif = document.getElementById('gif');
+      //gif.style.display = 'none';
+
+      //var container = document.getElementByID('content');
+      //content.style.display = 'none';
+
+      var btn = document.getElementById('confetti-btn');
+  
+      function showText() {
+        btn.style.display = 'none';
+        text.style.display = 'block';
+        //gif.style.display = 'block';
+        //fadeIn();
+        //gif.style.display = 'inherit';
+        gif.classList.toggle("fade-in");
+      }
+      
+      var opacity = 0; 
+      var intervalID = 0; 
+
+      function fadeIn() { 
+        intervalID = setInterval(show, 20000); 
+      } 
+
+      function show() { 
+          opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity")); 
+          if (opacity < 1) { 
+              opacity = opacity + 0.1; 
+              gif.style.opacity = opacity;
+              //console.log(opacity);
+          }
+          else { 
+              clearInterval(intervalID); 
+          } 
+      } 
+    </script>
+  
+  
+    <style>
+      html {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      body {
+        /*margin: 0;
+        height: 100vh;*/
+        
+        background-image: url("https://www.koin.com/wp-content/uploads/sites/10/2022/06/GettyImages-1321546994.jpg?w=2560&h=1440&crop=1");
+        background-size: cover;
+
+
+      }
+
+      .main-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .confetti-btn {
+        /* background: #04AA6D; */
+        background: red;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 8px 32px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .text {
+        font-weight: bold;
+        text-align: center;
+      }
+      
+      .gif{
+        opacity: 0;
+      }
+
+      .fade-in{
+        transition: opacity 4s;
+        opacity: 1;
+
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+    </style>
+    
+  </body>
+</html>
