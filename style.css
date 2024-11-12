@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  background-color: #9BAB7A;
+  color: white;
+  font-family: 'Space Grotesk';
+}
+
+img {
+  height: 35px;
+  width: 35px;
+  margin: 2px;
+  filter: invert(93%) sepia(28%) saturate(455%) hue-rotate(28deg) brightness(105%) contrast(104%);
+}
+
+img:hover {
+  filter: invert(89%) sepia(31%) saturate(494%) hue-rotate(25deg) brightness(103%) contrast(84%);
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h3 {
+  color: #CFEB94;
+  margin: 0px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+}
+
+b {
+  color: #E9FFBB;
+  font-weight: 600;
+}
+
+b#name {
+  color: #CFEB94;
+}
+
+a {
+  color: #E9FFBB;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #CFEB94;
+  /* text-decoration: underline; */
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-text {
+  margin-left: 5%;
+  margin-right: 5%;
+  z-index: 2;
+}
+
+.info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.box {
+  border: 2px dotted white;
+  padding: 1%;
+  width: 47%;
+
+  /*
+  margin: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  */
+}
+
+.box2 {
+  border: 2px dotted white;
+  padding: 15px;
+
+  /*
+  padding-left: 30px;
+  padding-right: 30px;
+  */
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+#work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+#interests {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

@@ -1,58 +1,123 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Joy Zou</title>
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  <link rel="icon" type="image/svg+xml" sizes="any"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💐</text></svg>" />
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="grocerylist">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>grocerylist</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '3788480514';
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+  <!-- <script src="script.js"></script> -->
 </head>
+
 <body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        }
-      }).then(function(engineInitializer) {
-        return engineInitializer.initializeEngine();
-      }).then(function(appRunner) {
-        return appRunner.runApp();
-      });
-    });
-  </script>
+
+  <div class='wrapper'>
+
+    <div class='content'>
+
+      <div class='main-text'>
+
+        <!-- INTRO -->
+
+        <div id="header">
+          <div>
+            <h1>
+              hey there, i'm <b id='name'>joy zou</b>👋
+            </h1>
+          </div>
+        </div>
+
+        <div id="about">
+
+          <h2>
+            i'm a high school student from the <b>sf bay area</b> exploring <b>computer science 👩‍💻 + public
+              policy 👩‍⚖️.</b>
+            passionate about gender + socioeconomic justice, design, & literary arts. always open to meeting new
+            people + ideas!
+          </h2>
+
+        </div>
+
+        <!-- INFO  -->
+
+        <div class="info">
+
+          <div id="work">
+
+            <div class="box" id="current">
+
+              <h3>currently...</h3>
+              <ul>
+                <li>researching graph algorithms @ <a href='https://crd.lbl.gov/'>berkeley lab 📊</a></li>
+                <li> youth ambassador @ <a href='https://code.org/youngwomen'>code.org </a> & <a
+                    href='https://swe.org/'>swe ⚙️</a>
+                </li>
+                <li>leading gender advocacy projects @ <a href='https://girlup.org/'>girl up pacific coast ♀️</a></li>
+                <li>serving my <a
+                    href='https://www.smuhsd.org/our-district/board-of-trustees/student-board-council'>school
+                    district board 🏫</a> & <a href='https://www.smcgov.org/ceo/youth-commission'>county youth
+                    commission 🏛️</a>
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="box" id="previous">
+
+              <h3>previously...</h3>
+              <ul>
+                <li>interned @ my state senator & mayor's offices 📜</li>
+                <li>built cognitive assistants @ <a href='https://beaverworks.ll.mit.edu/CMS/bw/'>mit beaverworks 🧠</a>
+                </li>
+                <li>researched ai x health equity @ <a href='https://aimi.stanford.edu/'>stanford's aimi center 🩻</a>
+                </li>
+                <li>led ml text + image analysis research @ <a href='https://www.asdrp.org/'>asdrp 🤖</a></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <p></p>
+
+          <div class="box2" id="interests">
+
+            <div>
+              <h3>let's chat over boba 🧋 about... </h3>
+              <p> pinterest boards, community building, human-centered design, digital culture, poetry recs,
+                your top 10
+                fonts
+              </p>
+            </div>
+
+            <div class='links'>
+              <a class='icon' href="mailto:joyzou93@gmail.com"><img src="email.svg"></a>
+              <a class='icon' href="https://instagram.com/joyzouu"><img src="instagram.svg"></a>
+              <a class='icon' href="https://www.linkedin.com/in/jyzou"><img src="linkedin.svg"></a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+
+        <div id="footer">
+          <h2>made with 🤍 by joy zou </h2>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </body>
+
 </html>
